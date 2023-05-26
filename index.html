@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FIFO Queue</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    #container {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    #queue {
+      margin-top: 20px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    #inputBox {
+      width: 300px;
+      height: 30px;
+      padding: 5px;
+      font-size: 16px;
+    }
+
+    #buttonContainer {
+      margin-top: 10px;
+    }
+
+    .button {
+      display: inline-block;
+      background-color: #f2f2f2;
+      color: #333;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      text-decoration: none;
+      margin-right: 10px;
+    }
+
+    .button:hover {
+      background-color: #ddd;
+    }
+
+    .button:active {
+      background-color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <h1>FIFO Method</h1>
+  <div id="container">
+    <input type="text" id="inputBox" placeholder="Masukkan elemen">
+    <div id="buttonContainer">
+      <button class="button" onclick="enqueue()">Tambah</button>
+      <button class="button" onclick="dequeue()">Hapus</button>
+    </div>
+    <div id="queue"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
